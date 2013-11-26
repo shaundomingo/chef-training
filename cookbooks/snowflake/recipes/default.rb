@@ -35,5 +35,5 @@ web_app "snowflake" do
   server_name node.name
   server_aliases [node['fqdn'], "snowflake.com"]
   docroot "/var/www/snowflake"
-  template "snowflake.conf"
+  template "snowflake.conf.erb"
 end
