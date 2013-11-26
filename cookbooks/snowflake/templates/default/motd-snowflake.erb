@@ -1,0 +1,17 @@
+<% if @update_motd %>
+#!/bin/sh
+
+cat <<EOS
+<% end -%>
+
+This is <%= @hostname %>, a <%= @domain %> <%= @environment %> server
+
+It's nearly Christmas time, no real snowflakes in AU!
+__/\__
+\_\/_/
+/_/\_\
+  \/
+
+<% if @update_motd %>
+EOS
+<% end -%>
