@@ -4,7 +4,7 @@
 cat <<EOS
 <% end -%>
 
-This is <%= @hostname %>, a <%= @domain %> <%= @environment %> server
+This is <%= node['name'] %>, a <%= @domain %> <%= @environment %> server
 
 It's nearly Christmas time, no real snowflakes in AU!
 __/\__

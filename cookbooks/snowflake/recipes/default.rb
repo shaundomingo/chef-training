@@ -13,3 +13,5 @@ motd '50-snowflake' do
   cookbook 'snowflake'
   source   'motd-snowflake.erb'
 end
+
+include_recipe "apache2"

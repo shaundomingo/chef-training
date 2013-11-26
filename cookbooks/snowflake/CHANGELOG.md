@@ -3,6 +3,10 @@ snowflake CHANGELOG
 
 This file is used to list changes made in each version of the snowflake cookbook.
 
+0.1.2
+-----
+- Install apache
+
 0.1.1
 -----
 - It's just a special kind of snowflake - implemented a global MOTD
