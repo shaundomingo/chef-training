@@ -5,7 +5,7 @@ This file is used to list changes made in each version of the snowflake cookbook
 
 0.1.3
 -----
-- Install a custom site
+- Install a custom site and deploy a static cookbook file for the index page
 
 0.1.2
 -----
