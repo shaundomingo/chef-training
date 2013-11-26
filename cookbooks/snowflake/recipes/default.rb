@@ -15,3 +15,25 @@ motd '50-snowflake' do
 end
 
 include_recipe "apache2"
+
+directory "/var/www/snowflake" do
+  owner "root"
+  group "root"
+  mode "0755"
+  recursive true
+  action :create
+end
+
+cookbook_file "/var/www/snowflake/index.html" do
+  source "index.html"
+  owner "root"
+  group "root"
+  mode "0644"
+end
+
+web_app "snowflake" do
+  server_name node.name
+  server_aliases [node['fqdn'], "snowflake.com"]
+  docroot "/var/www/snowflake"
+  template "snowflake.conf"
+end

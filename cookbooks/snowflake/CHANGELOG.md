@@ -3,6 +3,10 @@ snowflake CHANGELOG
 
 This file is used to list changes made in each version of the snowflake cookbook.
 
+0.1.3
+-----
+- Install a custom site
+
 0.1.2
 -----
 - Install apache
